@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create tarball with scripts and docs
+        run: |
+          mkdir -p release-package
+          cp disk-wiper.py release-package/
+          cp LICENSE release-package/
+          cp README.md release-package/
+          tar -czf disk-wiper-${{ github.ref_name }}-linux.tar.gz -C release-package .
+          ls -lh disk-wiper-*.tar.gz
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            disk-wiper-*.tar.gz
+          draft: false
+          prerelease: false
+          generate_release_notes: true
