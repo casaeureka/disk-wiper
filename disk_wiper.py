@@ -14,16 +14,16 @@ DANGER: This script will PERMANENTLY DESTROY ALL DATA on specified devices
 Use with extreme caution!
 
 Usage:
-  sudo python3 disk-wiper.py [devices...]
+  sudo python3 disk_wiper.py [devices...]
 
 Arguments:
   devices  Space-separated device paths (e.g., /dev/sda /dev/sdb)
            If not provided, will auto-detect all non-USB disks
 
 Examples:
-  sudo python3 disk-wiper.py                         # Interactive: wipe all non-USB (press Enter)
-  sudo python3 disk-wiper.py /dev/sda                # Wipe single device
-  sudo python3 disk-wiper.py /dev/sda /dev/sdb       # Wipe multiple devices
+  sudo python3 disk_wiper.py                         # Interactive: wipe all non-USB (press Enter)
+  sudo python3 disk_wiper.py /dev/sda                # Wipe single device
+  sudo python3 disk_wiper.py /dev/sda /dev/sdb       # Wipe multiple devices
 
 Requirements:
   - Must run as root
@@ -692,9 +692,9 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  sudo python3 disk-wiper.py /dev/sda
-  sudo python3 disk-wiper.py /dev/sda /dev/sdb
-  sudo python3 disk-wiper.py
+  sudo python3 disk_wiper.py /dev/sda
+  sudo python3 disk_wiper.py /dev/sda /dev/sdb
+  sudo python3 disk_wiper.py
 
 ⚠️  WARNING: This will PERMANENTLY DESTROY ALL DATA on specified devices
         """,

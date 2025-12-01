@@ -52,7 +52,7 @@ disk-wiper --version
 bash install-dependencies.sh
 
 # Run directly
-sudo python3 disk-wiper.py
+sudo python3 disk_wiper.py
 ```
 
 ## Safety Features

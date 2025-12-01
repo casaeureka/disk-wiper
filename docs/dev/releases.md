@@ -30,6 +30,6 @@ After releasing, update version in projects that use this tool.
 
 Each release includes:
 - `disk-wiper-{version}-linux.tar.gz`
-  - Script: `disk-wiper.py`
+  - Script: `disk_wiper.py`
   - `LICENSE`
   - `README.md`
