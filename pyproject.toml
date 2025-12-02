@@ -13,6 +13,12 @@ authors = [
     {name = "Casa Eureka"}
 ]
 
+[project.scripts]
+disk-wiper = "disk_wiper:main"
+
+[tool.setuptools]
+py-modules = ["disk_wiper"]
+
 [tool.ruff]
 target-version = "py313"
 line-length = 120
