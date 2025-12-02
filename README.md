@@ -66,3 +66,9 @@ sudo python3 disk_wiper.py
 ## License
 
 GPLv3 - See [LICENSE](LICENSE)
+
+## Support
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsor-ea4aaa?logo=github)](https://github.com/sponsors/W3Max)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-ff5f5f?logo=ko-fi)](https://ko-fi.com/w3max)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/w3max)
