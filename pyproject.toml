@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "disk-wiper"
-version = "main"
+version = "1.0.6"
 description = "Disk wipe tool for home-server preparation"
 readme = "README.md"
 requires-python = ">=3.13"
