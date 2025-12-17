@@ -764,7 +764,7 @@ Examples:
     print()
     success("╔═══════════════════════════════════════════════════════════╗")
     success("║                                                           ║")
-    success("║         Disk wipe completed successfully!                ║")
+    success("║         Disk wipe completed successfully!                 ║")
     success("║                                                           ║")
     success("╚═══════════════════════════════════════════════════════════╝")
     print()
