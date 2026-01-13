@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Dev wrapper for disk-wiper CLI
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+exec python "${SCRIPT_DIR}/../disk_wiper.py" "$@"
